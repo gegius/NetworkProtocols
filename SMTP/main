@@ -1,0 +1,9 @@
+from get_config import get_message_config
+from smtp import send_mail_to
+
+if __name__ == '__main__':
+    receivers, topic, attachments = get_message_config('date/configure.ini')
+    with open('date/message_content.txt') as f:
+        plain_text = f.read()
+    for receiver in receivers:
+        send_mail_to(receiver, plain_text, topic, attachments)
