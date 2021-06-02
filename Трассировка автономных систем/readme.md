@@ -1,3 +1,7 @@
+Постановка задачи:
+
+![eEUxkQcVGfw](https://user-images.githubusercontent.com/55377473/120552554-d52dc700-c410-11eb-8697-1f9993bdd2e3.jpg)
+
 #Пример запуска: py main.py
 
 После запуска требуется ввести ip адрес или доменное имя,
