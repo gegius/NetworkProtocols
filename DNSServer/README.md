@@ -1,6 +1,6 @@
 #Постановка задачи:
 
-	https://user-images.githubusercontent.com/55377473/120493191-2c617680-c3d4-11eb-96e4-610ae9a13937.jpg
+![BZfWDwPXjIY](https://user-images.githubusercontent.com/55377473/120493299-4733eb00-c3d4-11eb-91c9-dd47d81ecdd3.jpg)
 
 Пример запуска py main.py
 
