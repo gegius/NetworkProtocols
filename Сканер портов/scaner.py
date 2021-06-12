@@ -19,11 +19,17 @@ def scan_tcp(ip, port):
 
 def scan_udp(ip, port):
     sock = socket(AF_INET, SOCK_STREAM)
+    sock.settimeout(0.1)
     try:
         sock.connect_ex((ip, port))
-        print(f"\n{port}: UDP порт открытый")
-    except:
-        print(f"\n{port}: UDP порт закрытый")
+        try:
+            sock.sendto(b'\x11', (ip, port))
+        except:
+            print(f"\n{port}: UDP порт закрытый")
+        else:
+            print(f"\n{port}: UDP порт открытый")
+    finally:
+        sock.close()
 
 
 def multi_check(ip, start, finish, prot):
